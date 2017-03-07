@@ -1,0 +1,17 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+cache:
+  directories:
+    - .cache/pip
+
+env:
+  - TARGET=linux-x32
+  - TARGET=linux-x64
+
+script:
+  - "(cd tools/linux/ && bash build-${TARGET}.sh)"
