@@ -3,7 +3,7 @@
 #include <complex>
 #include <vector>
 #include "fftw3.h"
-#include <tuple>
+
 #define CMPLXVEC vector<vector<complex<double> > >
 
 namespace std {
